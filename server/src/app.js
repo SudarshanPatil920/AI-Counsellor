@@ -10,7 +10,6 @@ import errorMiddleware from "./middleware/error.middleware.js";
 import taskRoutes from "./routes/task.routes.js";
 import decisionRoutes from "./routes/decision.routes.js";
 
-
 const app = express();
 
 app.use(
