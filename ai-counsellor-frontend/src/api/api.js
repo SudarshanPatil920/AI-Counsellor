@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://ai-counsellor-coral-sigma.vercel.app/";
 
 export const api = async (url, method = "GET", body) => {
   const token = localStorage.getItem("token");
