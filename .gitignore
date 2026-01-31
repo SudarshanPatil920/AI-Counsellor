@@ -1,0 +1,11 @@
+# Ignore all environment files
+.env
+.env.*
+
+# Ignore frontend env
+ai-counsellor-frontend/.env
+ai-counsellor-frontend/.env.*
+
+# Ignore backend env
+server/.env
+server/.env.*
