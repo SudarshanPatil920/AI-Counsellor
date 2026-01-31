@@ -16,7 +16,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://ai-counsellor-mvr.vercel.app", // frontend
+      "https://ai-counsellor-mvr.vercel.app", // frontend (prod)
       "http://localhost:5173"                // local dev
     ],
     credentials: true,
