@@ -1,4 +1,4 @@
-const API_BASE = "https://ai-counsellor-coral-sigma.vercel.app/";
+const API_BASE = import.meta.env.VITE_API_BASE + "/api";
 
 export const api = async (url, method = "GET", body) => {
   const token = localStorage.getItem("token");

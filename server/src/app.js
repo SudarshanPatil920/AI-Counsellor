@@ -13,7 +13,18 @@ import decisionRoutes from "./routes/decision.routes.js";
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://ai-counsellor-mvr.vercel.app", // frontend
+      "http://localhost:5173"                // local dev
+    ],
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
+
 app.use(express.json());
 app.use(morgan("dev"));
 
